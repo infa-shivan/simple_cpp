@@ -1,0 +1,145 @@
+#!/bin/sh
+#
+# Checks if the translated message files are sane in terms of Message IDs and
+# Message Numbers.  The actual message text is ignored, which of course, will
+# be different across languages.
+#
+# Note that this utility cannot guarantee that the localized messages are in
+# sync, because it cannot analyze the actual message text.
+#
+# Usage: locmsgchk <lang1> <lang2>
+#
+# For example, to compare the English and Japanese message files in the
+# current source tree:
+# 
+#     lsmsgdiff en ja
+#
+# Returns: 0 - success
+#          1 - there are differences or some other error occurred
+#
+
+
+# My name
+progname=`basename $0`
+
+# Validate commandline
+[ $# -eq 2 ] || {
+    echo >&2 "Usage: $progname <lang1> <lang2>"
+    echo >&2 "       Compares messages files between <lang1> and <lang2>"
+    exit 1
+}
+
+# Same langauge: nothing to do
+lang1="$1"
+lang2="$2"
+[ "$lang1" = "$lang2" ] && exit 0
+
+# Make sure language directories exist
+unset CDPATH
+cd ../.. || exit 1
+for s in server
+do
+    for lang in $lang1 $lang2
+    do
+        d="$s/msg/$lang"
+        [ -d "$d" -a -r "$d" ] || {
+            echo >&2 "$progname: directory [$d] inaccessible or does not exist."
+            exit 1
+        }
+    done
+done
+
+# Cleanup on signals
+MTMPDIR=${TMPDIR}
+[ "$MTMPDIR" != "" -a -d "$MTMPDIR" ] || MTMPDIR=${TEMP}
+[ "$MTMPDIR" != "" -a -d "$MTMPDIR" ] || MTMPDIR=${TMP}
+[ "$MTMPDIR" != "" -a -d "$MTMPDIR" ] || MTMPDIR=/tmp
+tmp1=$MTMPDIR/ms1_$$
+tmp2=$MTMPDIR/ms2_$$
+tmp3=$MTMPDIR/ms3_$$
+export tmp1 tmp2 tmp3
+cleanup()
+{
+    rm -f $tmp1 $tmp2 $tmp3
+}
+cleanup_handler()
+{
+    cleanup
+    echo >&2 "$progname: ***** caught a signal: aborting"
+    exit 1
+}
+trap cleanup_handler 1 2 3 15
+
+# Function to replace actual message text with "<message text>"
+msgfilt()
+{
+    grep -v '^\$locale' | awk '
+        /^[1-9]/   { print $1, " \"<message text>\""; }
+        /^[^1-9]/ { print; }
+    '
+}
+
+# Function to compare two message files
+# $1: first file, $2: second file
+# Returns 0 if no differences, non-0 otherwise
+msgcomp()
+{
+    # Validate arguments
+    [ $# -eq 2 ] || {
+        echo >&2 "$progname: msgcomp: internal error: expecting 2 arguments"
+        exit 1
+    }
+
+    # Verify that files exist and are readable
+    file1="$1"
+    file2="$2"
+    for f in $file1 $file2
+    do
+        [ -f $f -a -r $f ] || {
+            echo >&2 "$progname: [$f] does not exist OR is unaccessible"
+            exit 1
+        }
+    done
+
+    # Sanity check
+    msgfilt < $file1 > $tmp1
+    msgfilt < $file2 > $tmp2
+    diff $tmp1 $tmp2 > $tmp3
+
+    # Files are different, so show differences
+    status=0
+    [ `wc -l < $tmp3` -gt 0 ] && {
+        echo "<<<<< [$file1]"
+        echo "-----"
+        echo ">>>>> [$file2]"
+        cat $tmp3
+        status=1
+    }
+    cleanup
+
+    # Done
+    return $status
+}
+
+# For each subsystem
+error=0
+for s in server
+do
+    # Get combined file list
+    msgfiles=`(cd $s/msg/$lang1 && ls *.msg &&
+               cd ../../../$s/msg/$lang2 && ls *.msg) | sort -u`
+
+    # For each message file perform check
+    for f in $msgfiles
+    do
+        msgcomp $s/msg/$lang1/$f $s/msg/$lang2/$f
+        [ $? -ne 0 ] && error=1
+    done
+done
+
+# Done
+[ $error -ne 0 ] && {
+    echo >&2 "$progname: ERROR: ***** found differences between" \
+             "[$lang1] and [$lang2] message files *****."
+}
+exit $error

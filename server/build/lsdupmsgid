@@ -1,0 +1,79 @@
+#!/bin/sh
+#
+# Checks if all the message IDs in the current source tree for a given
+# language are unique.  If they are not, list the duplicates.
+#
+# Usage: lsdupmsg [<lang>]
+#        if <lang> not specified, it defaults to "en"
+#
+# For example, to check for duplicate English messages in the current
+# source tree:
+# 
+#     lsdupmsgid
+#
+# To do the same check for Japanese messages:
+#
+#     lsdupmsgid ja
+#
+# Returns: 0 - success
+#          1 - there are duplicates or some other error occurred
+#
+
+
+# My name
+progname=`basename $0`
+
+# Validate commandline
+[ $# -le 1  ] || {
+    echo >&2 "Usage: $progname [<lang>]"
+    echo >&2 "       if <lang> is not specified, it defaults to \"en\"."
+    exit 1
+}
+
+# Language to check: default English
+[ $# -eq 1 ] && lang="$1" || lang="en"
+
+# Cleanup on signals
+MTMPDIR=${TMPDIR}
+[ "$MTMPDIR" != "" -a -d "$MTMPDIR" ] || MTMPDIR=${TEMP}
+[ "$MTMPDIR" != "" -a -d "$MTMPDIR" ] || MTMPDIR=${TMP}
+[ "$MTMPDIR" != "" -a -d "$MTMPDIR" ] || MTMPDIR=/tmp
+tmp1=$MTMPDIR/ms1_$$
+tmp2=$MTMPDIR/ms2_$$
+tmp3=$MTMPDIR/ms3_$$
+export tmp1 tmp2 tmp3
+cleanup()
+{
+    rm -f $tmp1 $tmp2 tmp3
+}
+cleanup_handler()
+{
+    cleanup
+    echo >&2 "$progname: ***** caught a signal: aborting"
+    exit 1
+}
+trap cleanup_handler 1 2 3 15
+
+# Grab all message IDs into $tmp1 file, sorted in numeric ascending order
+unset CDPATH
+cd .. || exit 1
+msgfiles="msg/$lang/*.msg"
+cat $msgfiles | awk ' /^[1-9]/ { print $1; } ' | sort -n > $tmp1
+
+# Sort the message IDs uniquely into $tmp2 file
+sort -nu $tmp1 > $tmp2
+
+# Diff to get the duplicates
+error=0
+for msgid in `diff $tmp1 $tmp2 | sed -n 's/^< //p'`
+do
+    error=1
+    grep "^$msgid[^0-9]" $msgfiles
+done
+
+# Done
+cleanup
+[ $error -ne 0 ] && {
+    echo >&2 "$progname: ERROR: ***** duplicate message ids found *****."
+}
+exit $error

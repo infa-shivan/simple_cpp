@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="shift_jis" ?> 
+<group name="wrt_msg.msg" prefix="WRT_">
+<info code="20001" key="NO_OPRN_SELECT" 
+        text="操作（挿入/削除/更新）が選択されていません">
+ </info>
+ <!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+<info code="20002" key="OPRN_SEL_UPD" 
+        text="操作が選択され[{0}]更新が[{1}]に設定されています">
+        <param seq="0" template="%s" notes="TODO" />
+	<param seq="1" template="%s" notes="TODO" />
+ </info>
+<info code="20003" key="EVNT_NAME" 
+        text="イベント名:[{0}]">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+ <!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+<info code="20004" key="DEINIT_TRG_PART" 
+        text="ターゲットの初期化解除 = [{0}] パーティション = [{1}]">
+        <param seq="0" template="%s" notes="TODO" />
+	<param seq="1" template="%s" notes="TODO" />
+ </info>
+<info code="20005" key="NUM_ROWS_MARKED_INSRT" 
+        text="挿入[{0}]のマークが付いた行の数">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+ <!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+<info code="20006" key="NUM_ROWS_INSRT_REJCT" 
+        text="「挿入」のマークが付いた[{0}]行を検出しました。「挿入」セッション属性が選択されていないので[{1}]行を拒否しています。">
+        <param seq="0" template="%s" notes="TODO" />
+	<param seq="1" template="%s" notes="TODO" />
+ </info>
+<info code="20007" key="NUM_ROWS_DEL" 
+        text="削除[{0}]のマークが付いた行数">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+ <!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+<info code="20008" key="NUM_ROWS_DEL_REJCT" 
+        text="「削除」のマークが付いた[{0}]行を検出しました。「削除」セッション属性が選択されていないので[{1}]行を拒否しています。">
+        <param seq="0" template="%s" notes="TODO" />
+	<param seq="1" template="%s" notes="TODO" />
+ </info>
+<info code="20009" key="NUM_ROWS_UPDT" 
+        text="更新[{0}]のマークが付いた行数">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+ <!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+<info code="20010" key="NUM_ROWS_UPDT_REJCT" 
+        text="「更新」のマークが付いた[{0}]行を検出しました。「更新」セッション属性が選択されていないので[{1}]行を拒否しています。">
+        <param seq="0" template="%s" notes="TODO" />
+	<param seq="1" template="%s" notes="TODO" />
+ </info>
+<info code="20011" key="EXEC_QRY_FAIL" 
+        text="クエリの実行に失敗しました: [{0}]">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20012" key="EXEC_QRY" 
+        text="クエリを実行しました: [{0}]">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20013" key="EXEC_INSRT_QRY_FAIL" 
+        text="挿入::クエリの実行に失敗しました: [{0}]">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20014" key="EXEC_INSRT_QRY" 
+        text="挿入::クエリを実行しました: [{0}]">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20015" key="EXEC_UPDT_QRY_FAIL" 
+        text="更新::クエリの実行に失敗しました: [{0}]">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20016" key="EXEC_UPDT_QRY" 
+        text="更新::クエリを実行しました: [{0}]">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20017" key="EXEC_DEL_QRY_FAIL" 
+        text="削除::クエリの実行に失敗しました: [{0}]">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20018" key="EXEC_DEL_QRY" 
+        text="削除::クエリを実行しました: [{0}]">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20019" key="NUM_LOAD_DATA_CALL" 
+        text="loadDataが呼び出される回数 = [{0}]">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20020" key="DETACH_SHRD_MEM_FAIL" 
+        text="共有メモリのアタッチ解除に失敗しました">
+ </info>
+<info code="20021" key="SQL_STATE" 
+        text="SQL状態（[{0}]）">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20022" key="CLOSING_PIPE" 
+        text="パイプ（[{0}]）を閉じています">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20023" key="GET_CONN_INFO_FAIL" 
+        text="接続情報の取得に失敗しました">
+ </info>
+<info code="20024" key="TRUNC_TBL_FREE_STMT_FAIL" 
+        text="テーブルのフリーステートメントの切り詰めに失敗しました">
+ </info>
+<info code="20025" key="FLUSH_PIPE" 
+        text="パイプがフラッシュされました">
+ </info>
+<info code="20026" key="STOP_ERROR_SET_CONTINUE" 
+        text="エラーでの停止が[{0}]に設定されています。セッションはそのまま実行され、間違った入力行はすべて無視されます">
+        <param seq="0" template="%s" notes="TODO" />
+ </info>
+<info code="20027" key="STOP_ERROR_SET_FAIL" 
+        text="ストップするまでのエラー数が[{0}]に設定されています。入力行の誤りが[{1}]個になると、セッションが失敗します">
+        <param seq="0" template="%s" notes="TODO" />
+        <param seq="1" template="%s" notes="TODO" />
+ </info>
+ <info code="20028" key="DTM_STOP_RQST_KILL_CHILD" 
+        text="DTM停止が要求されました。子プロセスをキルしています">
+ </info>
+
+ <info code="20029" key="CREATE_PIPE_FAIL" 
+         text="パイプの作成に失敗しました。">
+ </info>
+ <info code="20030" key="CREATE_PIPE_SUCC" 
+         text="パイプが正常に作成されました">
+  </info>
+  <info code="20033" key="CREATE_THIS_PIPE_SUCC" 
+          text="パイプを正常に作成しました:[{0}]">
+          <param seq="0" template="%s" notes="TODO" />
+ </info>
+ <info code="20034" key="OPEN_PIPE_FAIL" 
+          text="パイプを開くことに失敗しました">     
+ </info>
+ <info code="20035" key="OPEN_PIPE_WRT_MODE" 
+          text="書き込みモードでパイプ（[{0}]）を開きました">
+          <param seq="0" template="%s" notes="TODO" />
+ </info>
+ <info code="20037" key="CRT_EXTTAB_SQL_ALLOC_FAIL" 
+          text="CreateExtTabColのSQLAllocに失敗しました">
+ </info>
+ <info code="20038" key="CRT_EXTTAB_SQL_COL_FAIL" 
+          text="CreateExtTabColのSQLColumnsに失敗しました">
+ </info>
+ <info code="20039" key="CRT_EXTTAB_SQL_FETCH_FAIL" 
+          text="CreateExtTabColのSQLFetchに失敗しました">
+ </info>
+ <info code="20040" key="CRT_EXTTAB_SQL_BIND_FAIL" 
+          text="CreateExtTabColのSQLUNBINDに失敗しました">
+ </info>
+  <info code="20041" key="CRT_EXTTAB_SQL_CLOSE_FAIL" 
+           text="CreateExtTabColのSQLCLOSEに失敗しました">
+ </info>
+  <info code="20042" key="REL_NOT_FOUND_NETZ" 
+           text="テーブル［{0}］がNetezzaデータベースに存在しないか、テーブルに列が存在しません。">
+           <param seq="0" template="%s" notes="TODO" />
+ </info>
+  <info code="20043" key="GET_SHRD_MEM_FAIL" 
+           text="共有メモリの取得に失敗しました">
+ </info>
+  <info code="20044" key="DTM_STOP_RQST_KILL_PARNT" 
+           text="DTM停止が要求されました。子プロセスをキルしています">
+ </info>
+  <info code="20045" key="CANCEL_STMT_FAIL" 
+            text="ステートメントのキャンセルに失敗しました">
+  </info>
+  <info code="20046" key="DIS_CONN_FAIL" 
+            text="切断に失敗しました">
+  </info>
+  <info code="20047" key="FREE_HANDLE_CONN_FAIL" 
+            text="接続ハンドルの解放に失敗しました">
+  </info>
+  <info code="20048" key="FREE_HANDLE_ENV_FAIL" 
+            text="環境ハンドルの解放に失敗しました">
+  </info>
+  <info code="20049" key="ALL_RES_HANDLE_FREE" 
+            text="ハンドルに関連付けられているリソースがすべて解放されました">
+  </info>
+  
+  <info code="20050" key="GET_TRG_NAME_FAIL" 
+              text="メタデータ拡張からのターゲットテーブル名の取得に失敗しました">
+  </info>
+  <info code="20052" key="CHILD_PROC_TERMINATED_SUCC" 
+              text="子プロセスは正常に終了しました">
+  </info>
+  <info code="20053" key="ALLOC_STMT_HANDLE_FAIL" 
+              text="ステートメントハンドルの割り当てに失敗しました">
+  </info>
+  <info code="20054" key="ALLOC_ENV_HANDLE_FAIL" 
+              text="環境ハンドルの割り当てに失敗しました">
+  </info>
+  <info code="20055" key="SET_ENV_ATTR_FAIL" 
+              text="環境属性の設定でに失敗しました">
+  </info>
+  <info code="20056" key="ALLOC_DATABASE_CONN_FAIL" 
+              text="データベース接続ハンドルの割り当てに失敗しました">
+  </info>
+  <info code="20057" key="INTE_SER_NOT_CONN_NPC" 
+              text="統合サービスがNetezza Performance Serverに接続できませんでした。">
+  </info>
+  <info code="20058" key="CONN_SUCC_ESTABLISHED" 
+              text="接続が正常に確立されました">
+  </info>
+  <info code="20059" key="EXEC_SQL_STMT_ERR" 
+              text="SQL 文の実行エラー: （[{0}]）">
+               <param seq="0" template="%s" notes="TODO" />
+  </info>
+  <info code="20060" key="EXEC_SQL_STMT" 
+              text="SQL文を実行しました: （[{0}]）">
+               <param seq="0" template="%s" notes="TODO" />
+  </info>
+  <info code="20061" key="SQL_FREE_STMT_ERR" 
+              text="SQL FREE文の実行エラー">
+  </info>
+  <info code="20062" key="GET_ERR_LOG_FILE_NAME_FAIL" 
+              text="エラーログファイル名の取得に失敗しました">
+  </info>
+  <info code="20063" key="CHILD_PROC_TERMINATED" 
+              text="子プロセスが終了しました">
+  </info>
+  <info code="20064" key="GET_ERR_DIR_SESS_ATTR_FAIL" 
+              text="ERROR DIRECTORYセッション属性の取得に失敗しました">
+  </info>
+  <info code="20065" key="MORE_THN_GROUP" 
+              text="複数のグループ">
+  </info>
+  <!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+  <info code="20066" key="INIT_TRG_GROUP_PART" 
+              text="ターゲット[{0}]（[{1}]）グループ[{2}]パーティション[{3}]を初期化しています。">
+              <param seq="0" template="%d" notes="TODO" />
+              <param seq="1" template="%s" notes="TODO" />
+              <param seq="2" template="%d" notes="TODO" />
+              <param seq="3" template="%d" notes="TODO" />
+  </info>
+  <info code="20067" key="CONN_INFO_DSN_USR_NAME" 
+              text="接続情報: DSN=[{0}]、ユーザ名=[{1}]">
+              <param seq="0" template="%s" notes="TODO" />
+              <param seq="1" template="%s" notes="TODO" />
+  </info>
+  <info code="20068" key="SET_AUTO_COMMIT_OFF" 
+              text="統合サービスは自動コミットを無効化しませんでした。">
+  </info>
+  <info code="20069" key="AUTO_COMMIT_OFF" 
+              text="自動コミットは無効です。">
+  </info>
+  <info code="20070" key="COMMIT_TRANS_FAIL" 
+                text="統合サービスはトランザクションをコミットできませんでした。">
+  </info>
+  <info code="20071" key="COMMIT_SUCC" 
+                text="統合サービスはトランザクションを正常にコミットしました。">
+  </info>
+  <info code="20072" key="NO_COL_LINK_FOR_UPDT" 
+                text="更新に対してリンクされたカラムがありません">
+  </info>
+  <info code="20073" key="KEY_CONS_MISS_TRG" 
+                text="ターゲットのプライマリキー制約がありません">
+  </info>
+  <info code="20074" key="UPDT_STRAT_VALUE_INVALID" 
+                text="無効な更新戦略の値">
+  </info>
+  <info code="20075" key="NO_DATA_WRITE_INTO_PIPE_FAIL" 
+                text=" 使用できるデータがありません：パイプへの書き込みに失敗しました。">
+  </info>
+  <info code="20076" key="THREAD_CREATION_FAIL" 
+                text="スレッドの作成に失敗しました">
+  </info>
+  
+ <info code="20077" key="GET_NETX_TRG_INST_FAIL" 
+                 text="Netezzaターゲットインスタンスを取得できませんでした">
+  </info>
+  <info code="20078" key="REQST_PART_DRIVER_EXCED_LIMIT" 
+                text="パーティションドライバ要求が制限を越えています">
+  </info>
+  <info code="20079" key="REQST_GRP_DRIVER_EXCED_LIMIT" 
+                text="グループドライバ要求が制限を越えています">
+  </info>
+  <info code="20080" key="INIT_DTM_STOP_REQST_KILL_CHILD" 
+                text="init:初期化:DTM停止が要求されました。子プロセスをキルしています">
+  </info>
+  <info code="20081" key="INIT_CANCEL_STMT_FAIL" 
+                text="init：ステートメントのキャンセルに失敗しました">
+  </info>
+  <info code="20082" key="INIT_CANCEL_STMT_HANDLE" 
+                text="init：ステートメントハンドルをキャンセルしました">
+  </info>
+  <info code="20083" key="INIT_REM_PIPE_SUCC" 
+                text="init::パイプ[{0}]を正常に削除しました">
+                <param seq="0" template="%s" notes="TODO" />
+  </info>
+  <info code="20084" key="DEINITE_REM_PIPE_SUCC" 
+                text="DeinitE:パイプ[{0}]を正常に削除しました">
+                <param seq="0" template="%s" notes="TODO" />
+  </info>
+  <info code="20085" key="DEINITSH_DTM_STOP_REQST_KILL_CHILD" 
+                text="Deinitsh：DTM停止が要求されました。子プロセスをキルしています">
+  </info>
+  <info code="20086" key="DEINITSH_CANCEL_STMT_FAIL" 
+                text="Deinitsh：ステートメントのキャンセルに失敗しました">
+  </info>
+  <info code="20087" key="DEINITSH_CANCEL_STMT_HANDLE" 
+                text="Deinitsh：ステートメントハンドルをキャンセルしました">
+  </info>
+  <info code="20088" key="DEINITSH_REM_PIPE_SUCC" 
+                text="Deinitsh:パイプ[{0}]を正常に削除しました">
+                <param seq="0" template="%s" notes="TODO" />
+  </info>
+   <info code="20089" key="DEINITS_DTM_STOP_REQST_KILL_CHILD" 
+                  text="Deinits：DTM停止が要求されました。子プロセスをキルしています">
+  </info>
+   <info code="20090" key="DEINITS_CANCEL_STMT_FAIL" 
+                  text="Deinits：ステートメントのキャンセルに失敗しました">
+  </info>
+   <info code="20091" key="DEINITS_CANCEL_STMT_HANDLE" 
+                  text="Deinits：ステートメントハンドルをキャンセルしました">
+  </info>
+   <info code="20092" key="DEINITS_REM_PIPE_SUCC" 
+                  text="Deinits::パイプ[{0}]を正常に削除しました">
+                  <param seq="0" template="%s" notes="TODO" />
+  </info>
+   <info code="20093" key="DEINITW_DTM_STOP_REQST_KILL_CHILD" 
+                  text="Deinitw：DTM停止が要求されました。子プロセスをキルしています">
+  </info>
+   <info code="20094" key="DEINITW_CANCEL_STMT_FAIL" 
+                  text="Deinitw：ステートメントのキャンセルに失敗しました">
+  </info>
+   <info code="20095" key="ADEINITW_CANCEL_STMT_HANDLE" 
+                  text="Deinitw：ステートメントハンドルをキャンセルしました">
+</info>
+<info code="20096" key="DEINITW_REM_PIPE_SUCC" 
+	text="Deinitw:パイプ[{0}]を正常に削除しました">
+	<param seq="0" template="%s" notes="TODO" />
+</info>
+<info code="20097" key="DEINIT_REM_PIPE_SUCC" 
+	text="Deinitializing:パイプ[{0}]を正常に削除しました">
+	<param seq="0" template="%s" notes="TODO" />
+</info>
+<!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+<info code="20098" key="NETZ_LOAD_SUMM_TRG_PART" 
+	text="NETEZZA LOAD SUMMARY\n ===================\n\n ターゲット: [{0}]: パーティション[{1}]（インスタンス名: [[{2}]]）">
+	<param seq="0" template="%s" notes="TODO" />
+	<param seq="1" template="%d" notes="TODO" />
+	<param seq="2" template="%s" notes="TODO" />
+</info>
+<!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+<info code="20099" key="NETZ_LOAD_SUMM_INSERT_ROWS" 
+	text="           挿入された行 - 要求: [{0}]適用: [{1}]拒否: [{2}]影響あり: [{3}]">
+	<param seq="0" template="%u" notes="TODO" />
+	<param seq="1" template="%u" notes="TODO" />
+	<param seq="2" template="%u" notes="TODO" />
+	<param seq="3" template="%u" notes="TODO" />
+</info>
+<info code="20100" key="NETZ_LOAD_SUMM_SESS" 
+	text="\nNETEZZAセッションロードサマリ\n==================================================\n\n">
+</info>
+<!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+<info code="20101" key="NETZ_LOAD_SUMM_OUTPUT_ROWS" 
+	text="出力行数[{0}]、影響のあった行数[{1}]、適用された行数[{2}]、拒否された行数[{3}]">
+	<param seq="0" template="%u" notes="TODO" />
+	<param seq="1" template="%u" notes="TODO" />
+	<param seq="2" template="%u" notes="TODO" />
+	<param seq="3" template="%u" notes="TODO" />
+</info>
+<info code="20102" key="NEW_LINE" 
+	text="\n==================================================\n">
+</info>
+<info code="20103" key="INSRT_ROWID_NETZ_SESS_NO_OPRATION" 
+	text="属性「ソース行の処理形態」が「挿入」に設定され、かつNetezzaセッション属性「挿入」がオンになっていません。操作は実行されません">
+</info>
+<info code="20104" key="DEL_ROWID_NETZ_SESS_NO_OPRATION" 
+	text="属性「ソース行の処理形態」が「削除」に設定され、かつNetezzaセッション属性「削除」がオンになっていません。操作は実行されません">
+</info>
+<info code="20105" key="UPDT_ROWID_NETZ_SESS_NO_OPRATION" 
+	text="属性「ソース行の処理形態」が「更新」に設定され、かつNetezzaセッション属性「更新」が「なし」に設定されています。操作は実行されません">
+</info>
+<info code="20106" key="BFR_CRT_SHARED_MEM" 
+	text="共有メモリを作成する前">
+</info>
+<info code="20107" key="AFTR_CRT_SHARED_MEM" 
+	text="共有メモリを作成した後">
+</info>
+<info code="20108" key="LOAD_TBL_ERR_SHARED_FLAG_SET" 
+	text="テーブルのロードエラー ： 共有フラグが設定されました">
+</info>
+<info code="20109" key="PARENT_RUN_START" 
+	text="親プロセスの実行が開始され、共有フラグが設定されました">
+</info>
+<info code="20110" key="NO_DATA_FROM_SRC" 
+	text="データ形式ソースがありません ： 共有フラグが設定されました">
+</info>
+<info code="20111" key="DEINIT_RET_STATUS_FAIL" 
+	text="deinitでのエラー戻りステータス。共有フラグが設定されました">
+</info>
+<info code="20112" key="FLUSH_DATA_SHARE_FLAG_SET" 
+	text="データのフラッシュ時に共有フラグが設定されました">
+</info>
+<info code="20113" key="PRIMARY_KEY_MISS_TRG_SHRD_FLAG_SET_CHILD" 
+	text="ターゲットからのプライマリキー制約がないので、子プロセスの共有フラグが設定されました">
+</info>
+<info code="20114" key="DTM_STOP_REQST_SET_CHILD_ERR_FLAG" 
+	text="DTM停止が要求されました。子エラーフラグを設定しています">
+</info>
+<info code="20115" key="POOL_CHILD_FOR_15_SEC" 
+	text="子プロセスを15秒間ポーリングしています">
+</info>
+<info code="20116" key="SHARED_SYNC_FLAG_SET_IN_EXEC" 
+	text="Executeに共有同期フラグが設定されました">
+</info>
+<info code="20117" key="SHARED_SYNC_FLAG_SET_ERR_QRY" 
+	text="クエリでのエラーのため、共有同期フラグが設定されました">
+</info>
+<info code="20118" key="ADD_ESCP_CHAR_TRG_TBL" 
+	text="ターゲットテーブルの特殊文字を有効にする前に、エスケープ文字を追加してください">
+</info>
+<info code="20119" key="PART_DEINIT_SUCC" 
+	text="パーティションの初期化を正常に解除しました">
+</info>
+<info code="20120" key="TREAT_SRC_ROW_ID" 
+	text="[ソース行の処理形態]を[{0}]に設定しました">
+	<param seq="0" template="%d" notes="TODO" />
+</info>
+<info code="20122" key="NETZCONNPATH_ENV_VAR_NOT_FOUND" 
+	text="NETEZZACONNECTORPATH環境変数が見つかりません。">
+</info>
+<info code="20123" key="CREATE_FILE_AT_LOCATION" 
+	text="次の場所にファイル（data.dat）を作成しています: [{0}].">
+	<param seq="0" template="%s" notes="TODO" />
+</info>
+<info code="20124" key="NETZ_WRITER" 
+	text="Netezza Writer">
+</info>
+<info code="20125" key="TRG_INDX_INVALID" 
+	text="無効なターゲットインデックス[[{0}]]。ターゲットドライバが作成されていません">
+	<param seq="0" template="%ld" notes="TODO" />
+</info>
+
+<info code="20126" key="ESCP_CHAR_MISS" 
+	text="エスケープ文字がありません">
+</info>
+<info code="20128" key="NULL_VAL_MAX_ONE_CHAR" 
+	text="NullValueは最大限1文字である必要があります。統合サービスは先頭文字をNullValueとして使用します">
+</info>
+<info code="20131" key="PCN_INSERT" 
+	text="挿入">
+</info>
+<info code="20132" key="PCN_DELETE" 
+	text="削除">
+</info>
+<info code="20137" key="INSERT_AND_DELETE" 
+	text="挿入と削除">
+</info>
+<!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+ <info code="20138" key="INFA_WRT_NETZ_PLUG_VER" 
+                  text="Informatica PowerCenter Connect for Netezza Writerプラグインバージョン[{0}]、ビルド[{1}]">
+                  <param seq="0" template="%s" notes="TODO" />
+                  <param seq="1" template="%s" notes="TODO" />
+  </info>
+ <info code="20139" key="PCN_UPDATE_AS_INSERT" 
+	text="挿入時に更新">
+</info>
+<!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+ <info code="20140" key="FLUSH_DATA_PIPE_ERR" 
+	text="パイプ{0}へのデータのフラッシュ中に、エラーが発生しました">
+	<param seq="0" template="%s" notes="TODO" />	
+</info>
+<info code="20141" key="GET_BAD_FILE_NAME_ERR" 
+	text="不良ファイル名の取得中に、エラーが発生しました">	
+</info>
+
+<info code="20142" key="BADFILE_EMPTY" 
+	text="不良ファイルが空です。コネクタは拒否された行を不良ファイルに記録しません">	
+</info>
+ <info code="20143" key="INVALID_BAD_FILE_NAME" 
+  	text="セッションプロパティに指定された不良ファイル名は無効です。有効なファイル名を指定してください。">
+</info>
+<info code="20144" key="COMMIT_TRANS_FAIL_TEMP" 
+          text="統合サービスは、データを一時テーブルにロードするためのトランザクションをコミットできませんでした。">
+</info>
+<info code="20145" key="COMMIT_SUCC_TEMP" 
+            text="統合サービスは、データを一時テーブルに正常にコミットしました。">
+</info>
+<info code="20146" key="IGNORE_KEY_CONS_SETTING_INCORRECT" 
+	text="キー制約を無視する値は無効です。キー制約を無視する値は、すべてのパーティションで同一である必要があります。">
+</info>
+<info code="20147" key="COMMIT_TRANS_FAIL_CRT_TEMPTBL" 
+          text="統合サービスは、一時テーブルを作成するためのトランザクションをコミットできませんでした。">
+</info>
+<info code="20148" key="COMMIT_SUCC_CRT_TEMPTBL" 
+            text="統合サービスは、一時テーブルの作成を正常にコミットしました。">
+</info>
+<info code="20149" key="NETZ_LOAD_SUMM_TEMP" 
+	text="\n\nNETEZZA一時テーブルのロードサマリ\n===============================\n\n一時テーブル：［{0}］：パーティション［{1}］（ターゲットのインスタンス名：[[{2}]]）\nこのパーティションにより処理され、一時テーブルにロードされた行数：{3}\n\n">
+	<param seq="0" template="%s" notes="TODO" />
+	<param seq="1" template="%d" notes="TODO" />
+	<param seq="2" template="%s" notes="TODO" />
+	<param seq="3" template="%d" notes="TODO" />
+</info>
+<info code="20150" key="COMMIT_SUCC_DRP_TBL" 
+            text="統合サービスは、外部/一時テーブルの削除トランザクションを正常にコミットしました。">
+            
+</info>
+<info code="20151" key="COMMIT_TRANS_FAIL_DRP_TBL" 
+          text="統合サービスは、外部／一時テーブルを削除するためのトランザクションをコミットできませんでした。">
+</info>
+<info code="20152" key="ROLLBCK_SUCC" 
+            text="統合サービスは、トランザクションを正常にロールバックしました。">
+            
+</info>
+<info code="20153" key="ROLLBCK_TRANS_FAIL" 
+          text="統合サービスは、トランザクションをロールバックできませんでした。">
+</info>
+<info code="20154" key="MULT_PART_SETTING_INCORRECT" 
+	text="挿入、削除、更新と重複行の処理メカニズムでは、各パーティションの値が同じである必要があります。それ以外の場合、セッション結果は予測できない場合があります。">
+</info>
+<info code="20155" key="NZ_SERIALIZATION_ERR" 
+          text="Netezzaがクエリーの実行をシリアル化できない場合があるため、統合サービスでセッションが失敗しました。">
+</info>
+<info code="20156" key="PRINT_CONNECTION_INFO" 
+ text="ドライバ: [{0}] ユーザー名: [{1}] データベース: [{2}] サーバー名: [{3}] ポート: [{4}] 実行時追加接続設定: [{5}]">
+	 <param seq="0" template="%s" notes="TODO" />
+	 <param seq="1" template="%s" notes="TODO" />
+	 <param seq="2" template="%s" notes="TODO" />
+	 <param seq="3" template="%s" notes="TODO" />
+	 <param seq="4" template="%s" notes="TODO" />
+	 <param seq="5" template="%s" notes="TODO" />
+</info>
+<info code="20157" key="ERROR_READING_CONNATTR" 
+text="接続属性の読み込みエラー: [{0}]">
+	 <param seq="0" template="%s" notes="TODO" />
+</info>
+<info code="20158" key="ERROR_READING_MANDATORY_CONN_ATTRS" 
+text="必須接続属性の読み込みに失敗しました。">
+</info>
+<info code="20159" key="PRINT_SESSION_ATTRIBUTE_STRING" 
+text="実行時セッション属性: [{0}] = [{1}]">
+	<param seq="0" template="%s" notes="TODO" />
+	<param seq="1" template="%s" notes="TODO" />
+</info>
+<info code="20160" key="CONN_INFO_FAIL" 
+	text="接続情報が失敗しました">
+</info>
+<info code="20161" key="PRINT_SESSION_ATTRIBUTE_INT" 
+text="実行時セッション属性: [{0}] = [{1}]">
+	<param seq="0" template="%s" notes="TODO" />
+	<param seq="1" template="%d" notes="TODO" />
+</info>
+		<info code="20162" key="EXEC_PRESQL_INFO" 
+		text="PreSQL for Netezzaターゲットを実行しています。">
+    	</info>
+		<info code="20163" key="EXEC_POSTSQL_INFO" 
+		text="PostSQL for Netezzaターゲットを実行しています。">
+    	</info>	
+</group>
+  
+  

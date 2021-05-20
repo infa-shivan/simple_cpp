@@ -1,0 +1,314 @@
+<?xml version="1.0" ?>
+<group name="rdr_msg.msg" prefix="RDR_">
+	<info code="10000" key="CONN_INFO_FAIL" 
+        	text="Connection Info Failed">
+    	</info>
+	<info code="10001" key="ENV_ALOC_FAIL" 
+	        text="Env Handle Allocation failed">
+    	</info>
+	<info code="10002" key="SET_ENV_ATTR_FAIL" 
+	   	text="setting environment variable failed">
+    	</info>
+	<info code="10003" key="DB_HANDLE_FAIL" 
+	        text="Databse handle failed">
+    	</info>
+	<info code="10004" key="SQL_CONNECT_FAIL" 
+		text="SQL connnection failed">
+    	</info>
+	<info code="10005" key="SQL_DISCONNECT_FAIL" 
+		text="SQL Disconnect failed">
+    	</info>
+	<info code="10006" key="SQL_FREE_HANDLE_FAIL_ENV" 
+		text="SQL Env handle releasing failed">
+    	</info>
+	<info code="10007" key="SQL_FREE_HANDLE_FAIL_DBC" 
+		text="SQL Database handle releasing Failed">
+    	</info>
+    	<!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+    	<info code="10008" key="CODEPAGE_ID" 
+		 text="Code page id #{0}.">
+        	 <param seq="0" template="%d" notes="TODO" />
+    	</info>
+    	<info code="10009" key="CONN_ESTABLISHED" 
+		text="Connection Established">
+    	</info>
+	<info code="10011" key="SESS_ATTR_FAIL" 
+		text="Getting Session Attributes Failed">
+    	</info>
+	 <info code="10012" key="META_EXT_FAIL" 
+		text="Getting MetaData Extension Failed">
+    	</info>
+    	 <info code="10013" key="SER_CONN_NPC_FAIL" 
+		text="Integration Service could not connect to Netezza Performance Server.">
+    	</info>
+    	 <info code="10014" key="FLD_INF_FAIL" 
+		text="Field Information Failed.">
+    	</info>
+    	<info code="10015" key="QRY_GEN_FAIL" 
+		text="Query Generation/Parsing failed.">
+    	</info>
+    	<info code="10016" key="BUF_BIND_FAIL" 
+		text="Buffer Binding Failed.">
+    	</info>
+    	<info code="10017" key="QRY_EXEC_FAIL" 
+		text="Query execution failed: [{0}]">
+	<param seq="0" template="%s" notes="TODO" />
+    	</info>
+    	<info code="10018" key="INVALID_DATA_TYPE" 
+		text="Invalid Datatype">
+    	</info>
+    	<info code="10019" key="READ_DATA_FAIL" 
+		text="Reading data failed.">
+    	</info>
+    	<info code="10020" key="FLUSH_DATA_FAIL" 
+		text="Flushing Data Failed.">
+    	</info>
+    	<info code="10021" key="ALLOC_STMT_HNDL_FAIL" 
+		text="Allocating Statement Handle Failed.">
+    	</info>
+    	<info code="10022" key="FETCH_COL_NAME_FAIL" 
+		text="Fetching Column Names Failed.">
+    	</info>
+    	<info code="10023" key="FLD_QRY_TRG_MATCH_FAIL" 
+		text="All Fields in Custom Query Dont Match Table Fields.">
+    	</info>
+    	<info code="10024" key="FLD_QRY_TRG_LINK_FAIL" 
+		text="Number of Fields in Custom Query dont match number of fields that are linked to target.">
+    	</info>
+    	<info code="10025" key="UPDT_C_DATA_TYPE_FAIL" 
+		text="Updating C Data Types Failed.">
+    	</info>
+    	<info code="10026" key="FETCH_CONN_INFO_FAIL" 
+		text="Fetching Connection Information Failed.">
+    	</info>
+    	<info code="10027" key="CREATE_LOCALE_FAIL" 
+		text="Create locale failed.">
+    	</info>
+    	<info code="10028" key="CREATE_PIPE_FAIL" 
+		text="Failed to create pipe.">
+    	</info>
+    	<info code="10029" key="CREATE_EXT_TABLE_FAIL" 
+		text="Create External Table Failed">
+    	</info>
+    	<info code="10030" key="CREATE_THREAD_FAIL" 
+		text="Thread creation failed.">
+    	</info>
+    	<info code="10031" key="RUN_METHOD_FAIL" 
+		text="Failed in Method Run.">
+    	</info>
+    	<info code="10032" key="PARSE_READ_PIPE_FAIL" 
+		text="Parsing error while reading from Pipe.">
+    	</info>
+    	<info code="10033" key="DTM_STOP_REQUEST" 
+		text="DTM Stop Requested.">
+    	</info>
+    	<info code="10034" key="OPEN_PIPE_FAIL" 
+		text="Opening pipe failed.">
+    	</info>    	
+    	<info code="10036" key="CREATE_CHILD_PROC_FAIL" 
+		text="Failed to create child process.">
+    	</info>
+    	<info code="10037" key="SQL_CANCEL_FAIL" 
+		text="SQL Cancel Failed">
+    	</info>
+    	<info code="10038" key="SERVER_MODE_UNICODE" 
+		text="Server mode is unicode">
+    	</info>
+    	<info code="10039" key="SERVER_MODE_ASCII" 
+		text="Server mode is ascii">
+    	</info>
+    	<info code="10040" key="TEST_LOAD_ENABLE" 
+		text="Test Load Enabled">
+    	</info>
+    	<info code="10041" key="CHILD_EXIT_ERROR" 
+		text="Child exiting with Error">
+    	</info>
+    	<info code="10042" key="CHILD_EXIT_SUCCESS" 
+		text="Child exiting with Success">
+    	</info>
+    	<info code="10043" key="OPEN_PIPE" 
+		text="Opened Pipe">
+    	</info>    	
+    	<info code="10045" key="CREATE_PIPE_SUCCESS" 
+		text="Successfully created Pipe :">
+    	</info>
+    	<info code="10046" key="SQL_QRY_EXPAND_FAIL" 
+		text="Failed to expand the SQL Query">
+    	</info>
+    	<info code="10047" key="PARTITION_INIT" 
+		text="Initializing Partition">
+    	</info>
+    	<info code="10048" key="PARTITION_INIT_COMPL" 
+		text="Partition Initialization Complete">
+    	</info>
+    	<info code="10049" key="PARTITION_DEINIT" 
+		text="Deinitializing Partition">
+    	</info>
+    	<info code="10050" key="FETCH_CONN_OBJ" 
+		text="Fetching Connection Object">
+    	</info>
+    	<info code="10051" key="APPL_CONN_PARAM" 
+		text="Applying Connection Parameters">
+    	</info>
+    	<info code="10052" key="CONN_NETZ" 
+		text="Connecting to Netezza">
+    	</info>
+    	<info code="10053" key="CONN_NETZ_SUCC" 
+		text="Successfully connected with Netezza">
+    	</info>
+    	<info code="10054" key="PREP_STMT" 
+		text="Preparing Statement">
+    	</info>
+    	<info code="10055" key="PREP_STMT_COMP" 
+		text="Prepare Statement Complete">
+    	</info>
+    	<info code="10056" key="BIND_PARAM" 
+		text="Binding Parameters">
+    	</info>
+    	<info code="10057" key="PART_INIT_COMP" 
+		text="Partition Init Complete">
+    	</info>
+    	<info code="10058" key="PART_RUN_CALLED" 
+		text="Partition Run Called">
+    	</info>
+    	<info code="10059" key="EXEC_QRY" 
+		text="Executing Query: [{0}] ">
+	<param seq="0" template="%s" notes="TODO" />
+    	</info>
+    	<info code="10060" key="FETCH_DATA_START" 
+		text="Fetching Data Started">
+    	</info>
+    	<info code="10061" key="FLUSH_CHUNCK_DATA" 
+		text="Flush Chunk of Data">
+    	</info>
+    	<info code="10062" key="NO_EOF_CANCELING_SELECT_QRY" 
+		text="EOF not found : Cancelling the Select Query">
+    	</info>
+    	<info code="10063" key="NO_EOF_CANCELED_SELECT_QRY" 
+		text="EOF not found : Cancelled  the Select Query">
+    	</info>
+    	<info code="10064" key="BFR_ALLOC_BUF_MEM_INIT" 
+		text="Before allocating buffer memory for single row in init">
+    	</info>
+    	<info code="10065" key="AFR_ALLOC_BUF_MEM_INIT" 
+		text="Buffer memory allocated for single row in init">
+    	</info>
+    	<info code="10066" key="GRP_SRC_NOT_SUPPORTED" 
+		text="Grouped Source Not Supported">
+    	</info>
+    	<info code="10067" key="INIT_DSQ_DRIVER" 
+		text="Initializing DSQ Driver">
+    	</info>
+    	<info code="10068" key="CRT_PART_DRIVER" 
+		text="Creating Partition Driver">
+    	</info>
+    	<info code="10069" key="DEL_PART_DRIVER" 
+		text="Deleting Partition Driver">
+    	</info>
+    	<info code="10070" key="DEINIT_DSQ_DRIVER" 
+		text="Deinitializing DSQ Driver">
+    	</info>
+    	<info code="10071" key="GET_DSQ_LIST_FAIL" 
+		text="Unable to get DSQ List">
+    	</info>
+    	<info code="10072" key="INIT_PLUGIN" 
+		text="Initializing plugin">
+    	</info>
+    	<info code="10073" key="DEINIT_PLUGIN" 
+		text="Deinitializing plugin">
+    	</info>
+    	<info code="10074" key="CRT_DSQ_DRIVER" 
+		text="Creating DSQ Driver">
+    	</info>
+    	<info code="10075" key="DEL_DSQ_DRIVER" 
+		text="Deleting DSQ Driver">
+    	</info>
+    	<info code="10076" key="INIT_PLUGIN_COMPLT" 
+		text="Plug-in Init complete">
+    	</info>
+    	<info code="10077" key="INVLD_SESS_EXT" 
+		text="Invalid session extension">
+    	</info>
+    	<info code="10083" key="SOURCE_TYPE" 
+		text="Source Type">
+    	</info>
+    	<info code="10084" key="SOURCE_NAME" 
+		text="Source Name">
+    	</info>
+    	<info code="10085" key="FULLPATH_NULL" 
+		text="fullPath is NULL">
+    	</info>
+    	<info code="10086" key="FILE_HANDLE_NULL" 
+		text="File handle is NULL">
+    	</info>
+    	<info code="10087" key="FILE_HANDLE_OK" 
+		text="file handle is OK">
+    	</info>
+    	<info code="10088" key="PARTITION_INIT_FAIL" 
+		text="Partition init failed.">
+    	</info>
+    	<info code="10089" key="PARTITION_RUN_FAIL" 
+		text="Partition run failed.">
+    	</info>
+    	<info code="10090" key="PARTITION_READDATA_FAIL" 
+		text="Partition readdata failed.">
+    	</info>
+    	<info code="10091" key="ERROR_READING_FILE" 
+		text="Error in reading row from file">
+    	</info>
+	<info code="10092" key="NO_OF_STORED_PORT_WARN" 
+		text="No of sorted Ports more than the No of Output fields">
+    	</info>
+	<!-- WARNING! Do not change parameters order during translation! This message is going to be used in C++ code. -->
+	 <info code="10093" key="INFA_RDR_NETZ_PLUG_VER" 
+	                  text="Informatica PowerCenter Connect for Netezza Reader Plugin Version [{0}], Build [{1}]">
+	                  <param seq="0" template="%s" notes="TODO" />
+	                  <param seq="1" template="%s" notes="TODO" />
+  	</info>
+  	<info code="10094" key="NETZ_READER" 
+		text="Netezza Reader">
+	</info>
+	<info code="10095" key="GET_SELECT_DISTINCT_FAIL" 
+			text="Fail to get Select Distinct session attribute">
+    	</info>
+    	<info code="10096" key="GET_NUM_OF_SORTED_PORTS_FAIL" 
+			text="Fail to get Number of sorted ports session attribute">
+    	</info>
+    	<info code="10097" key="GET_USER_DEF_JOIN_FAIL" 
+			text="Fail to get User Defined join session attribute">
+    	</info>
+    	<info code="10098" key="GET_SOURCE_FILTER_FAIL" 
+			text="Fail to get Source Filter session attribute">
+    	</info>
+    	<info code="10099" key="GET_SQL_QUERY_FAIL" 
+			text="Fail to get SQL Query session attribute">
+    	</info> 
+		<info code="10101" key="PRINT_CONNECTION_INFO" 
+		 text="Driver: [{0}] Username: [{1}] Database: [{2}] Servername: [{3}] Port: [{4}] Runtime Additional Connection Configuration: [{5}]">
+	         <param seq="0" template="%s" notes="TODO" />
+	         <param seq="1" template="%s" notes="TODO" />
+			 <param seq="2" template="%s" notes="TODO" />
+	         <param seq="3" template="%s" notes="TODO" />
+			 <param seq="4" template="%s" notes="TODO" />
+			 <param seq="5" template="%s" notes="TODO" />
+    	</info>
+		<info code="10102" key="ERROR_READING_CONNATTR" 
+		text="Error reading connection attribute: [{0}]">
+			 <param seq="0" template="%s" notes="TODO" />
+    	</info>
+		<info code="10103" key="ERROR_READING_MANDATORY_CONN_ATTRS" 
+		text="Failed to read mandatory connection attributes.">
+    	</info>
+		<info code="10104" key="PRINT_SESSION_ATTRIBUTE" 
+		text="Runtime Session Attribute: [{0}] = [{1}]">
+			<param seq="0" template="%s" notes="TODO" />
+			<param seq="1" template="%s" notes="TODO" />
+    	</info>
+		<info code="10105" key="EXEC_PRESQL_INFO" 
+		text="Executing PreSQL for Netezza Source.">
+    	</info>
+		<info code="10106" key="EXEC_POSTSQL_INFO" 
+		text="Executing PostSQL for Netezza Source.">
+    	</info>		
+    </group>
+    	

@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="AMD64Debug|Win32">
+      <Configuration>AMD64Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="AMD64Debug|x64">
+      <Configuration>AMD64Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="AMD64Release|Win32">
+      <Configuration>AMD64Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="AMD64Release|x64">
+      <Configuration>AMD64Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B7C53DE-93D0-42A9-9252-C24AE700826A}</ProjectGuid>
+    <RootNamespace>gcmsgnt</RootNamespace>
+    <SccProjectName>gcmsgnt</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Release|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/gcmsgnt.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/gcmsgnt.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/gcmsgnt.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/gcmsgnt.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/gcmsgnt.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Debug/gcmsgnt.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/gcmsgnt.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Debug/gcmsgnt.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="pmnetezza_en.res">
+      <Command Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|Win32'">call .\gcmsgnt.bat en pmnetezza_en.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|Win32'">en\cmn_msg.xml; en\rdr_msg.xml; en\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|Win32'">pmnetezza_en.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|x64'">call .\gcmsgnt.bat en pmnetezza_en.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|x64'">en\cmn_msg.xml; en\rdr_msg.xml; en\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|x64'">pmnetezza_en.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='AMD64Release|Win32'">call .\gcmsgnt.bat en pmnetezza_en.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='AMD64Release|Win32'">en\cmn_msg.xml; en\rdr_msg.xml; en\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='AMD64Release|Win32'">pmnetezza_en.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='AMD64Release|x64'">call .\gcmsgnt.bat en pmnetezza_en.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='AMD64Release|x64'">en\cmn_msg.xml; en\rdr_msg.xml; en\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='AMD64Release|x64'">pmnetezza_en.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">call .\gcmsgnt.bat en pmnetezza_en.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">en\cmn_msg.xml; en\rdr_msg.xml; en\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pmnetezza_en.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">call .\gcmsgnt.bat en pmnetezza_en.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">en\cmn_msg.xml; en\rdr_msg.xml; en\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pmnetezza_en.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">call .\gcmsgnt.bat en pmnetezza_en.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">en\cmn_msg.xml; en\rdr_msg.xml; en\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pmnetezza_en.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">call .\gcmsgnt.bat en pmnetezza_en.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">en\cmn_msg.xml; en\rdr_msg.xml; en\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pmnetezza_en.res;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="pmnetezza_ja.res">
+      <Command Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|Win32'">call .\gcmsgnt.bat ja pmnetezza_ja.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|Win32'">ja\cmn_msg.xml;ja\rdr_msg.xml;ja\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|Win32'">pmnetezza_ja.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|x64'">call .\gcmsgnt.bat ja pmnetezza_ja.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|x64'">ja\cmn_msg.xml;ja\rdr_msg.xml;ja\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='AMD64Debug|x64'">pmnetezza_ja.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='AMD64Release|Win32'">call .\gcmsgnt.bat ja pmnetezza_ja.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='AMD64Release|Win32'">ja\cmn_msg.xml;ja\rdr_msg.xml;ja\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='AMD64Release|Win32'">pmnetezza_ja.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='AMD64Release|x64'">call .\gcmsgnt.bat ja pmnetezza_ja.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='AMD64Release|x64'">ja\cmn_msg.xml;ja\rdr_msg.xml;ja\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='AMD64Release|x64'">pmnetezza_ja.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">call .\gcmsgnt.bat ja pmnetezza_ja.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ja\cmn_msg.xml;ja\rdr_msg.xml;ja\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pmnetezza_ja.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">call .\gcmsgnt.bat ja pmnetezza_ja.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ja\cmn_msg.xml;ja\rdr_msg.xml;ja\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pmnetezza_ja.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">call .\gcmsgnt.bat ja pmnetezza_ja.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ja\cmn_msg.xml;ja\rdr_msg.xml;ja\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pmnetezza_ja.res;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">call .\gcmsgnt.bat ja pmnetezza_ja.res
+call .\updtmsgicu.bat en rdr ..\Reader
+call .\updtmsgicu.bat en cmn ..\cmn
+call .\updtmsgicu.bat en wrt ..\Writer
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ja\cmn_msg.xml;ja\rdr_msg.xml;ja\wrt_msg.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pmnetezza_ja.res;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
