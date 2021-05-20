@@ -65,7 +65,7 @@ jobs:
     #    uses a compiled language
 
     - run: |
-        gcc ./hello.cpp
+        make all
 
 
 #     - if: matrix.language == 'cpp'
