@@ -65,8 +65,8 @@ jobs:
     #    uses a compiled language
 
     - run: |
-        make bootstrap
-        make release
+        make -f ./build/makefile
+
 
 #     - if: matrix.language == 'cpp'
 #       name: Autobuild
