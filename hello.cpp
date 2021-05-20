@@ -1,5 +1,5 @@
-# Alerts due to an unbounded write.
-# See https://github.com/github/codeql/blob/main/cpp/ql/src/Security/CWE/CWE-120/UnboundedWrite.ql
+//## Alerts due to an unbounded write.
+//# See https://github.com/github/codeql/blob/main/cpp/ql/src/Security/CWE/CWE-120/UnboundedWrite.ql
 
 #include <stdio.h>
 #include <string.h>
